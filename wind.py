@@ -89,7 +89,7 @@ class WindAppTest(unittest.TestCase):
         driver = self.driver
         driver.get("https://business.wind.app/signup")
         time.sleep(2)
-        WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, "email"))).send_keys("sadikun22123+SignUp@gmail.com")
+        WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, "email"))).send_keys("demo+signUp@gmail.com")
         time.sleep(5)
         WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//button[normalize-space()='Continue']"))).click()
         time.sleep(30)
@@ -100,7 +100,7 @@ class WindAppTest(unittest.TestCase):
     def test_02_login(self):
         driver = self.driver
         driver.get("https://business.wind.app/login")
-        WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, "email"))).send_keys("sadikun22123@gmail.com")
+        WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, "email"))).send_keys("demo@gmail.com")
         time.sleep(5)
         WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "//button[normalize-space()='Continue']"))).click()
         time.sleep(30)
